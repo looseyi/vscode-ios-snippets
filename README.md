@@ -11,6 +11,7 @@ Below, all the snippets bundled in this extension. Fell free to propose new snip
 * Classes, Protocols, Enums, and Structs
   * ``class`` - Swift Class
   * ``class-subclass`` - Swift Subclass
+  * ``class-final`` - Swift class  
   * ``protocol`` - Swift Protocol
   * ``struct`` - Swift Struct Declaration
   * ``extension`` - Swift Extension
@@ -31,20 +32,21 @@ Below, all the snippets bundled in this extension. Fell free to propose new snip
 * Misc
   * ``closure`` - Swift Closure Expression
   * ``defer`` - Swift Defer Statement
-  * ``fixme`` - Fix Me (``// FIXME: ...``)
   * ``func`` - Swift Function Statement
   * ``init`` - Swift Initializer Declaration
+  * ``convenience`` - Swift convenience Initializer Declaration
   * ``let`` - Swift Let Declaration
   * ``let-computed-constant`` - Swift Computed Constant Declaration
-  * ``mark`` - Mark (``// MARK: - ...``)
   * ``singleton`` - Swift Singleton (``static let sharedInstance...``)
-  * ``todo`` - To Do (``// TODO: ...``)
   * ``typealias`` - Swift Typealias Declaration
   * ``var`` - Swift Var Declaration
   * ``var-computed-variable-get-set`` - Swift Computed Variable Get and Set Declaration
   * ``var-computed-variable-get`` - Swift Computed Variable Get Declaration
   * ``var-lazy-computed-property`` - Swift Lazy Computed Property Declaration
   * ``var-lazy-variable`` - Swift Lazy Stored Variable Declaration
+  * ``fixme`` - Fix Me (``// FIXME: ...``)
+  * ``mark`` - Mark (``// MARK: - ...``)
+  * ``todo`` - To Do (``// TODO: ...``)
 
 * Testing
   * ``describe`` - Quick Describe Block
@@ -104,17 +106,26 @@ Below, all the snippets bundled in this extension. Fell free to propose new snip
 
 * CocoaPods
   * ``pod`` - CocoaPods Pod Declaration
+  * ``pod-git-branch`` - CocoaPods Pod from Git branch Declaration
   * ``pod-git-commit`` - CocoaPods Pod from Git Commit (SHA) Declaration
   * ``pod-git-tag`` - CocoaPods Pod from Git Tag Declaration
   * ``pod-local-disk`` - CocoaPods Pod from Local Disk Declaration
+  * ``pod-repo-push`` - CocoaPods Pod push repo to remote repostry 
   * ``target`` - CocoaPods Target Declaration
   * ``post_install`` - CocoaPods Post Install
+
+## Shell. Shell?
+
+* Carthage 
+  * ``carthage-update`` - CocoaPods Pod update Declaration
+  * ``carthage-build`` - CocoaPods Pod build Declaration
 
 In order to make the CocoaPods snippets to work, please edit your Visual Studio Code settings to load ``Podfile`` files as Ruby.
 
 ```json
     "files.associations": {
-        "Podfile": "ruby"
+        "Podfile": "ruby",
+        "Carthage": "shell"
     }
 ```
 

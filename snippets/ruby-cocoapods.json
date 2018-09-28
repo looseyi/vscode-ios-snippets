@@ -6,26 +6,40 @@
         "description": "CocoaPods Pod Declaration",
         "prefix": "pod"
     },
+    "Pod from Git Branch": {
+        "body": [
+            "pod '${name}', :git => '${repository}', :branch => '${sha}'"
+        ],
+        "description": "CocoaPods Pod from Git Branch Declaration",
+        "prefix": "pod-branch"
+    },
     "Pod from Git Commit": {
         "body": [
             "pod '${name}', :git => '${repository}', :commit => '${sha}'"
         ],
         "description": "CocoaPods Pod from Git Commit Declaration",
-        "prefix": "pod-git-commit"
+        "prefix": "pod-commit"
     },
     "Pod from Git Tag": {
         "body": [
             "pod '${name}', :git => '${repository}', :tag => '${tag}'"
         ],
         "description": "CocoaPods Pod from Git Tag Declaration",
-        "prefix": "pod-git-tag"
+        "prefix": "pod-tag"
     },
     "Pod from Local Disk": {
         "body": [
             "pod '${name}', :path => '${path}'"
         ],
         "description": "CocoaPods Pod from Local Disk Declaration",
-        "prefix": "pod-local-disk"
+        "prefix": "pod-local"
+    },
+    "Pod Repo Push": {
+        "body": [
+            "pod repo ${repo} ${name}.podspec --allow-warnings --verbose",
+        ],
+        "description": "CocoaPods Pod from Local Disk Declaration",
+        "prefix": "pod-local"
     },
     "Post Install": {
         "body": [
@@ -34,7 +48,7 @@
             "end"
         ],
         "description": "CocoaPods Post Install",
-        "prefix": "post_install"
+        "prefix": "post-install"
     },
     "Target": {
         "body": [

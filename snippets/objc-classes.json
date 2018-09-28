@@ -8,7 +8,7 @@
             "@end"
         ],
         "description": "Objective-C Category",
-        "prefix": "@interface-category"
+        "prefix": "@inter-cat"
     },
     "Objective-C Category Implementation": {
         "body": [
@@ -19,7 +19,7 @@
             "@end"
         ],
         "description": "Objective-C Category Definition",
-        "prefix": "@implementation-category"
+        "prefix": "@imp-cat"
     },
     "Objective-C Class Declaration": {
         "body": [
@@ -30,7 +30,7 @@
             "@end"
         ],
         "description": "Objective-C Class Declaration",
-        "prefix": "@interface"
+        "prefix": "@inter"
     },
     "Objective-C Class Extension": {
         "body": [
@@ -41,7 +41,7 @@
             "@end"
         ],
         "description": "Objective-C Class Extension",
-        "prefix": "@interface-extension"
+        "prefix": "@inter-ext"
     },
     "Objective-C Class Implementation": {
         "body": [
@@ -52,7 +52,7 @@
             "@end"
         ],
         "description": "Objective-C Class Implementation",
-        "prefix": "@implementation"
+        "prefix": "@imp"
     },
     "Objective-C Protocol Definition": {
         "body": [
@@ -63,6 +63,6 @@
             "@end"
         ],
         "description": "Objective-C Protocol Definition",
-        "prefix": "@protocol"
+        "prefix": "@pro"
     }
 }

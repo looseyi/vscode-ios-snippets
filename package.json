@@ -1,25 +1,24 @@
 {
     "name": "ios-snippets",
-        "displayName": "iOS Snippets",
-        "description": "Snippets for iOS/macOS Development",
-        "version": "0.0.14",
-        "publisher": "ornithologist",
-        "icon": "icon.png",
-        "homepage": "https://github.com/ornithocoder/vscode-ios-snippets",
-        "engines": {
-            "vscode": "^0.10.6"
-        },
-        "keywords":["ios", "objective-c", "swift", "completion", "snippets"],
-        "categories": [
-            "Snippets"
-            ],
-        "repository": {
-            "type": "git",
-            "url": "https://github.com/ornithocoder/vscode-ios-snippets.git"
-        },
-        "contributes": {
-            "snippets": [
-            {
+    "displayName": "iOS Snippets",
+    "description": "Snippets for iOS/macOS Development",
+    "version": "0.0.15",
+    "publisher": "ornithologist",
+    "icon": "icon.png",
+    "homepage": "https://github.com/ornithocoder/vscode-ios-snippets",
+    "engines": {
+        "vscode": "^0.10.6"
+    },
+    "keywords": ["ios", "objective-c", "swift", "completion", "snippets"],
+    "categories": [
+        "Snippets"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ornithocoder/vscode-ios-snippets.git"
+    },
+    "contributes": {
+        "snippets": [{
                 "language": "objective-c",
                 "path": "./snippets/objc-misc.json"
             },
@@ -48,9 +47,17 @@
                 "path": "./snippets/swift-misc.json"
             },
             {
+                "language": "swift",
+                "path": "./snippets/swift-views.json"
+            },
+            {
                 "language": "ruby",
                 "path": "./snippets/ruby-cocoapods.json"
+            },
+            {
+                "language": "shell",
+                "path": "./snippets/shell-carthage.json"
             }
-            ]
-        }
+        ]
+    }
 }

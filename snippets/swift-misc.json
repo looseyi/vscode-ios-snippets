@@ -13,16 +13,12 @@
         "description": "Mark (// MARK: - ...)",
         "prefix": "mark"
     },
-    "Swift API Availability Check Statement": {
+    "To Do": {
         "body": [
-            "if #available(${platform name} ${version}, *) {",
-            "\t${API available statements}",
-            "} else {",
-            "\t${fallback statements}",
-            "}"
+            "// TODO: ${description}"
         ],
-        "description": "Swift API Availability Check Statement",
-        "prefix": "available"
+        "description": "To Do (// TODO: ...)",
+        "prefix": "todo"
     },
     "Swift Closure Expression": {
         "body": [
@@ -33,6 +29,37 @@
         "description": "Swift Closure Expression",
         "prefix": "closure"
     },
+    "Swift Var Declaration": {
+        "body": [
+            "var ${name} = ${value}"
+        ],
+        "description": "Swift Var Declaration",
+        "prefix": "var"
+    },
+    "Swift Lazy Computed Property Declaration": {
+        "body": [
+            "lazy var ${property name}: ${type name} = {",
+            "\t${statements}",
+            "\treturn ${value}",
+            "}()"
+        ],
+        "description": "Swift Lazy Computed Property Declaration",
+        "prefix": "var-lazy"
+    },
+    "Swift Lazy Stored Variable Declaration": {
+        "body": [
+            "lazy var ${variable name} = ${expression}"
+        ],
+        "description": "Swift Lazy Stored Variable Declaration",
+        "prefix": "var-lazy-variable"
+    },
+    "Swift Let Declaration": {
+        "body": [
+            "let ${name} = ${value}"
+        ],
+        "description": "Swift Let Declaration",
+        "prefix": "let"
+    },
     "Swift Computed Constant Declaration": {
         "body": [
             "let ${property name}: ${type name} = {",
@@ -41,7 +68,7 @@
             "}()"
         ],
         "description": "Swift Computed Constant Declaration",
-        "prefix": "let-computed-constant"
+        "prefix": "let-computed"
     },
     "Swift Computed Variable Get Declaration": {
         "body": [
@@ -50,7 +77,7 @@
             "}"
         ],
         "description": "Swift Computed Variable Get Declaration",
-        "prefix": "var-computed-variable-get"
+        "prefix": "var-computed"
     },
     "Swift Computed Variable Get and Set Declaration": {
         "body": [
@@ -64,7 +91,7 @@
             "}"
         ],
         "description": "Swift Computed Variable Get and Set Declaration",
-        "prefix": "var-computed-variable-get-set"
+        "prefix": "var-get-set"
     },
     "Swift Defer Statement": {
         "body": [
@@ -94,6 +121,24 @@
         ],
         "description": "Swift For Statement",
         "prefix": "for"
+    },
+    "Swift Static Function Statement": {
+        "body": [
+            "static func ${name}(${parameters}) -> ${return type} {",
+            "\t${function body}",
+            "}"
+        ],
+        "description": "Swift Function Statement",
+        "prefix": "func-s"
+    },
+    "Swift Private Function Statement": {
+        "body": [
+            "func ${name}(${parameters}) -> ${return type} {",
+            "\t${function body}",
+            "}"
+        ],
+        "description": "Swift Function Statement",
+        "prefix": "func-p"
     },
     "Swift Function Statement": {
         "body": [
@@ -158,33 +203,18 @@
         "description": "Swift Initializer Declaration",
         "prefix": "init"
     },
-    "Swift Lazy Computed Property Declaration": {
+    "Swift Convenience Initializer Declaration": {
         "body": [
-            "lazy var ${property name}: ${type name} = {",
+            "convenience init (${parameter}: ${type}) {",
             "\t${statements}",
-            "\treturn ${value}",
-            "}()"
+            "}"
         ],
-        "description": "Swift Lazy Computed Property Declaration",
-        "prefix": "var-lazy-computed-property"
-    },
-    "Swift Lazy Stored Variable Declaration": {
-        "body": [
-            "lazy var ${variable name} = ${expression}"
-        ],
-        "description": "Swift Lazy Stored Variable Declaration",
-        "prefix": "var-lazy-variable"
-    },
-    "Swift Let Declaration": {
-        "body": [
-            "let ${name} = ${value}"
-        ],
-        "description": "Swift Let Declaration",
-        "prefix": "let"
+        "description": "Swift Initializer Declaration",
+        "prefix": "convenience"
     },
     "Swift Singleton": {
         "body": [
-            "static let sharedInstance : ${name} = ${name}()"
+            "static let shared: ${name} = ${name}()"
         ],
         "description": "Swift Singleton (static let sharedInstance...)",
         "prefix": "singleton"
@@ -208,13 +238,6 @@
         "description": "Swift Typealias Declaration",
         "prefix": "typealias"
     },
-    "Swift Var Declaration": {
-        "body": [
-            "var ${name} = ${value}"
-        ],
-        "description": "Swift Var Declaration",
-        "prefix": "var"
-    },
     "Swift While Statement": {
         "body": [
             "while ${condition} {",
@@ -223,12 +246,5 @@
         ],
         "description": "Swift While Statement",
         "prefix": "while"
-    },
-    "To Do": {
-        "body": [
-            "// TODO: ${description}"
-        ],
-        "description": "To Do (// TODO: ...)",
-        "prefix": "todo"
     }
 }

@@ -1,0 +1,16 @@
+{
+    "Carthage Update": {
+        "body": [
+            "carthage update ${lib} --platform ${iOS} --no-use-binaries --cache-builds"
+        ],
+        "description": "carthage update",
+        "prefix": "carthage-update"
+    },
+    "Carthage build": {
+        "body": [
+            "carthage build ${lib} --platform ${iOS} "
+        ],
+        "description": "carthage build",
+        "prefix": "carthage-build"
+    }
+}

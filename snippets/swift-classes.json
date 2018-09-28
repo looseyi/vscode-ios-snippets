@@ -51,6 +51,15 @@
             "}"
         ],
         "description": "Swift Subclass",
-        "prefix": "class-subclass"
+        "prefix": "class-sub"
+    },
+    "Swift Final Class": {
+        "body": [
+            "final class ${name}: ${superclass} {",
+            "\t${code}",
+            "}"
+        ],
+        "description": "Swift final class",
+        "prefix": "class-final"
     }
 }

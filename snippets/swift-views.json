@@ -1,0 +1,21 @@
+{
+    "Swift TableViewCell Register Statement": {
+        "body": [
+            "tableView.registerClass(FundDetailRateCell.self)"
+        ],
+        "description": "Swift While Statement",
+        "prefix": "cell-reg"
+    },
+    "Swift Lazy TableVew Register Statement": {
+        "body": [
+            "lazy var tableView: UITableView = {",
+            "\t    let tableView: UITableView = UITableView(frame: self.view.bounds)",
+            "\t    tableView.estimatedRowHeight = ${estimatedRowHight}",
+            "\t    tableView.rowHeight = UITableView.automaticDimension",
+            "    tableView.registerClass(${CellType}.self)",
+            "}"
+        ],
+        "description": "Swift TableViewCell Register Statement",
+        "prefix": "tbcell-reg"
+    }
+}
